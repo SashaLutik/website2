@@ -1,0 +1,1138 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: #232325;
+    font-family: "Dela Gothic One";
+    margin: 0;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+button{
+    font-family: "Dela Gothic One";
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #424242;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #646262;
+    ;
+    border-radius: 3px;
+}
+.container{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding-left: 190px;
+    padding-right: 190px;
+}
+/* ----- */
+.header{
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #232325;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.header__inner{
+    padding: 20px 0 20px 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__logo{
+    font-size: 24px;
+}
+.menu__logo2{
+    font-size: 24px;
+    display: none;
+}
+.menu__links{
+    display: flex;
+    gap: 23px;
+   
+}
+.menu__links span{
+    font-size: 16px;
+}
+.color{
+    border-radius: 5px;
+    padding: 0 3px 0 3px;
+}
+.color:hover{
+    background-color: #F9874A;
+    transition: 0.1s;
+    
+}
+.menu__btn{
+    display: none;
+    border: none;
+    outline: none;
+    width: 62px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.menu__btn span {
+    background-color: #ffffff;
+    height: 4px;
+    border-radius: 1px;
+    width: 100%;
+}
+.dropdown {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 140px;
+    right: 0;
+    background-color: #5d018c;
+    border-radius: 0 0 10px 10px;
+    z-index: 998;
+}
+/* ----- */
+.main{
+    padding-top: 75px;
+}
+.dropdownmenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 70px;
+    right: 0;
+    background-color: #2f2f32;
+    border-radius: 0 0 10px 10px;
+    z-index: 998;
+}
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 20px;
+    color: #ffffff;
+}
+/* ----- */
+.list__title{
+    background-color: #924DBE;
+}
+.top__title{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.image__title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.top__title__text{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: end;
+    max-width: 610px;
+}
+.top__title__text span{
+    font-size: 30px;
+}
+.bottom__title{
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+}
+.bottom__title span{
+    font-size: 24px;
+}
+/* ----- */
+.holder__title{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.title__slogan{
+    text-align: center;
+    max-width: 827px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.title__slogan span{
+    font-size: 30px;
+}
+.title__text{
+    padding: 0 5px;
+    background-color: #F9874A;
+}
+.title__slogan2{
+    text-align: center;
+    max-width: 512px;
+    padding-bottom: 55px;
+}
+.title__slogan2 span{
+    font-size: 30px;
+}
+/* ----- */
+.holder__cards__list{
+    padding-bottom: 30px;
+}
+.cards__list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+.card__holder{
+    display: flex;
+    justify-content: center;
+}
+.card2{
+    background-color: #D7E5FA;
+    padding: 34px 32px 20px 32px;
+    border-radius: 10px;
+}
+.card3{
+    background-color: #FFFFFF;
+    padding: 34px 32px 20px 32px;
+    border-radius: 10px;
+}
+.card4{
+    background-color: #FDFFD7;
+    padding: 34px 32px 20px 32px;
+    border-radius: 10px;
+}
+.image__cards{
+    display: flex;
+    justify-content: center;
+}
+.text__cards{
+    max-width: 190px;
+    min-height: 120px;
+}
+.text__top__card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.text__top__card span{
+    color: #000000;
+    font-size: 16px;
+}
+.text__bottom__card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.text__bottom__card span{
+    color: #50526F;
+    font-size: 14px;
+}
+.button__cards{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+.button__link{
+    background-color: #3561FF;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 17px 30px;
+    transition: 0.5s;
+}
+.button__link:hover{
+    background-color: #093aeb;
+}
+/* ----- */
+.title__platform{
+    text-align: center;
+    max-width: 512px;
+    padding-bottom: 5px;
+}
+.title__platform span{
+   font-size: 30px;
+}
+.image__arrow{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.holder__title__platform{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.title__courses {
+    display: flex;
+}
+.title__courses span{
+    text-align: center;
+    font-size: 30px;
+    color: #F9874A;
+}
+.buttons__courses{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 35px;
+}
+#view__butt1{
+    background-color: #3561FF;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 70px;
+    border-radius: 20px;
+}
+#view__butt2{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 70px;
+    border-radius: 20px;
+}
+/* ----- */
+.list__cards{
+    display: flex;
+    justify-content: center;
+} 
+.card{
+    max-width: 720px;
+    overflow: hidden;
+}
+.slider__image{
+    display: flex;
+    gap: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+.card__course{
+   border-radius: 10px;
+   transition: 0.4s;
+}
+.card__images{
+    border-radius: 10px;
+    max-width: 340px;
+    display: flex;
+}
+.офлайн{
+    display: none;
+}
+.онлайн{
+    display: flex;
+}
+.button__nav{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 55px;
+    padding-bottom: 110px;
+}
+.arrow__nav{
+    background-color: inherit;
+}
+/* ----- */
+.holder__title__teacher{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+.title__teacher span{
+    text-align: center;
+    font-size: 30px;
+}
+.list__teachers{
+    display: flex;
+    justify-content: center;
+} 
+.card__teacher{
+    max-width: 950px;
+    overflow: hidden;
+}
+.slider__teacher{
+    display: flex;
+    gap: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+.teacher__card{
+   border-radius: 20px;
+   transition: 0.4s;
+}
+.teacher__images{
+    border-radius: 20px;
+    max-width: 290px;
+    display: flex;
+}
+/* ----- */
+.holder__score{
+    background-color: #2E2E35;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 20px 40px 42px;
+    border-radius: 20px;
+}
+.score__top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.score__top span{
+    font-size: 24px;
+}
+.score__section{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+.score__bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.score__bottom span{
+    font-size: 20px;
+}
+.course__info{
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+.course__list__holder{
+    display: flex;
+    justify-content: center;
+    background-color: #2E2E35;
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+.course__list__title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.course__list__title span{
+    color: #3561FF;
+    font-size: 30px;
+}
+.cource__list__text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 58px;
+}
+.cource__list__text span{
+    font-size: 24px;
+}
+.cource__text{
+    max-width: 745px;
+}
+.course__btn__link{
+    display: flex;
+    justify-content: center;
+}
+.course__btn{
+    background-color: #3561FF;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 19px 30px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.course__btn:hover{
+    background-color: #093aeb;
+}
+/* ----- */
+.bottom__info{
+    padding-bottom: 100px;
+}
+.reviews__list{
+    padding-bottom: 110px;
+}
+.reviews__title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+.reviews__title span{
+    font-size: 30px;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.reviews img {
+    max-width: 30%;
+}
+.reviews__slider__list{
+    display: none;
+    justify-content: center;
+}
+.reviews__slider{
+    max-width: 550px;
+    overflow: hidden;
+}
+.reviews__cards{
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+.reviews__images{
+    display: flex;
+    max-width: 260px;
+}
+.button__nav__rev{
+    display: none;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 55px;
+}
+/* ----- */
+.title__test{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.title__test span{
+    text-align: center;
+    font-size: 30px;
+    color: #F9874A;
+}
+.test{
+    background-image: url(../assets/images/testimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+.test__title{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.test__text{
+   max-width: 610px;
+}
+.test__text span{
+    font-size: 24px;
+}
+.button__test{
+    padding-top: 60px;
+}
+/* ----- */
+.footer{
+    background-color: #1E1E1E;
+    padding: 70px 0 90px 0;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.log2{
+    display: none;
+}
+.log span{
+    font-size: 20px;
+}
+.log2 span{
+    font-size: 26px;
+}
+.numb{
+    max-width: 260px;
+}
+.numb span{
+    font-size: 16px;
+    text-align: center;
+}
+.numb p{
+    font-size: 14px;
+}
+.socialmedia span{
+    font-size: 20px;
+}
+.links__media{
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+/* ----- */
+
+@font-face{
+    font-family: "Dela Gothic One";
+    src: url(../assets/fonts/DelaGothicOne-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@media (max-width: 1360px) {
+    .container {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+@media (max-width: 1270px) {
+    .card__teacher{
+        max-width: 620px;
+    }
+}
+@media (max-width: 1200px) {
+    .image__title {
+        min-height: 277px;
+    }
+    .top__title__text {
+        max-width: 400px;
+    }
+    .top__title__text span {
+        font-size: 28px;
+    }
+    .bottom__title span {
+            font-size: 22px;
+        }
+}
+@media (max-width: 1050px) {
+    .container {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .image__title {
+        min-height: 266px;
+    }
+    .top__title__text {
+        max-width: 454px;
+    }
+    .top__title__text span {
+    font-size: 28px;
+    }
+}
+@media (max-width: 950px) {
+    .container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .top__title__text span {
+        font-size: 28px;
+    }
+    .bottom__title span {
+        font-size: 22px;
+    }
+    .title__slogan span {
+        font-size: 28px;
+    }
+    .title__slogan2 span {
+        font-size: 28px;
+    }
+    .title__platform span {
+        font-size: 28px;
+    }
+    .title__courses span {
+        font-size: 28px;
+    }
+    .title__teacher span {
+        font-size: 28px;
+    }
+    .score__top span {
+        font-size: 22px;
+    }
+    .course__list__title span {
+        font-size: 28px;
+    }
+    .cource__list__text span {
+        font-size: 22px;
+    }
+    .reviews__title span {
+        font-size: 28px;
+    }
+    .title__test span {
+        font-size: 28px;
+    }
+    .test__text span {
+        font-size: 22px;
+    }
+}
+@media (max-width:890px) {
+    .card{
+        max-width: 340px;
+    }
+}
+@media (max-width: 870px) {
+    .menu__logo{
+        display: none;
+    }
+    .menu__logo2{
+        display: block;
+    }
+    .image__cards img {
+        max-width: 40%;
+    }
+    .reviews{
+        display: none;
+    }
+    .reviews__slider__list{
+        display: flex;
+    }
+    .button__nav__rev{
+        display: flex;
+    }
+    .log{
+        display: none;
+    }
+    .log2{
+        display: block;
+    }
+    .numb {
+        max-width: 185px;
+    }
+}
+@media (max-width: 840px) {
+    .top__title__text span {
+        font-size: 26px;
+    }
+    .bottom__title span {
+        font-size: 20px;
+    }
+    .title__slogan span {
+        font-size: 26px;
+    }
+    .title__slogan2 span {
+        font-size: 26px;
+    }
+    .text__bottom__card span {
+        font-size: 12px;
+    }
+    .text__top__card span {
+        font-size: 14px;
+    }
+    .card2 {
+        padding: 34px 22px 20px 22px;
+    }
+    .card3 {
+        padding: 34px 22px 20px 22px;
+    }
+    .card4 {
+        padding: 34px 22px 20px 22px;
+    }
+    .title__platform span {
+        font-size: 26px;
+    }
+    .title__courses span {
+        font-size: 26px;
+    }
+    .title__teacher span {
+        font-size: 26px;
+    }
+    .score__top span {
+        font-size: 20px;
+    }
+    .course__list__title span {
+        font-size: 26px;
+    }
+    .cource__list__text span {
+        font-size: 22px;
+    }
+    .reviews__title span {
+        font-size: 26px;
+    }
+    .test__text span {
+        font-size: 22px;
+    }
+    .title__test span {
+        font-size: 26px;
+    }
+}
+@media (max-width: 800px) {
+    .card__teacher {
+        max-width: 290px;
+    }
+}
+@media (max-width: 740px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .top__title__text {
+        padding-bottom: 5px;
+        max-width: 425px;
+    }
+    .course__btn {
+        font-size: 14px;
+    }
+}
+@media (max-width: 660px) {
+    .top__title {
+        gap: 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .top__title__text {
+        text-align: center;
+    }
+    .top__title__text span {
+        font-size: 24px;
+    }
+    .bottom__title {
+        justify-content: center;
+        text-align: center;
+    }
+    .bottom__title span {
+        font-size: 18px;
+    }
+    .title__slogan span {
+        font-size: 24px;
+    }
+    .title__slogan2 span {
+        font-size: 24px;
+    }
+    .cards__list {
+        flex-direction: column;
+    }
+    .text__cards {
+        max-width: 237px;
+        min-height: 80px;
+    }
+    .card2 {
+        padding: 20px 22px 20px 22px;
+    }
+    .card3 {
+        padding: 20px 22px 20px 22px;
+    }
+    .card4 {
+        padding: 20px 22px 20px 22px;
+    }
+    .button__link {
+        font-size: 14px;
+        padding: 17px 20px;
+    }
+    .title__platform span {
+        font-size: 24px;
+    }
+    .title__courses span {
+        font-size: 24px;
+    }
+    .title__teacher span {
+        font-size: 24px;
+    }
+    .score__top span {
+        font-size: 18px;
+    }
+    .score__bottom span {
+        font-size: 16px;
+    }
+    .course__list__title span {
+        font-size: 24px;
+    }
+    .cource__list__text span {
+        font-size: 20px;
+    }
+    .reviews__title span {
+        font-size: 24px;
+    }
+    .test__text span {
+        font-size: 20px;
+    }
+    .title__test span {
+        font-size: 24px;
+    }
+}
+@media (max-width: 650px) {
+    .menu {
+        align-items: flex-end;
+    }
+    .menu__links{
+        display: none;
+    }
+    .menu__btn{
+        display: flex;
+    }
+    .course__btn {
+        font-size: 12px;
+    }
+    #view__butt1 {
+        font-size: 16px;
+        padding: 10px 60px;
+    }
+    #view__butt2 {
+        font-size: 16px;
+        padding: 10px 60px;
+    }
+    .card {
+        width: 290px;
+    }
+    .card__images{
+        border-radius: 10px;
+        max-width: 290px;
+        display: flex;
+    }
+    .slider__image {
+        gap: 90px;
+    }
+    .card__teacher{
+        max-width: 220px;
+    }
+    .teacher__images{
+        max-width: 220px;
+    }
+    .slider__teacher{
+        gap: 110px;
+    }
+    .reviews__slider{
+        max-width: 260px;
+    }
+    .socialmedia span {
+        font-size: 18px;
+    }
+    .numb {
+        max-width: 130px;
+    }
+    .numb p {
+        font-size: 12px;
+    }
+    .numb span {
+        font-size: 14px;
+    }
+    .log2 span {
+        font-size: 18px;
+    }
+    .img__link{
+        width: 39px;
+        height: 39px;
+    }
+}
+@media (max-width: 530px) {
+    .top__title__text span {
+        font-size: 22px;
+    }
+    .bottom__title span {
+        font-size: 16px;
+    }
+    .title__slogan span {
+        font-size: 22px;
+    }
+    .title__slogan2 span {
+        font-size: 22px;
+    }
+    .title__platform span {
+        font-size: 22px;
+    }
+    .title__courses span {
+        font-size: 22px;
+    }
+    .title__teacher span {
+        font-size: 22px;
+    }
+    .score__top span {
+        font-size: 16px;
+    }
+    .score__bottom span {
+        font-size: 14px;
+    }
+    .course__list__title span {
+        font-size: 22px;
+    }
+    .cource__list__text span {
+        font-size: 18px;
+    }
+    .reviews__title span {
+        font-size: 22px;
+    }
+    .test__text span {
+        font-size: 18px;
+    }
+    .title__test span {
+        font-size: 22px;
+    }
+}
+@media (max-width: 500px) {
+    #view__butt1 {
+        padding: 10px 40px;
+    }
+    #view__butt2 {
+        padding: 10px 40px;
+    }
+    .links {
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .log{
+        display: block;
+    }
+    .log span{
+        font-size: 18px;
+    }
+    .log2{
+        display: none;
+    }
+    .numb {
+        max-width: 175px;
+        text-align: center;
+    }
+}
+@media (max-width: 460px) {
+    .image__title {
+        max-width: 65%;
+        min-height: 160px;
+    }
+    .top__title__text span {
+        font-size: 18px;
+    }
+    .bottom__title span {
+        font-size: 12px;
+    }
+    .holder__title {
+        padding-top: 40px;
+    }
+    .title__platform span {
+        font-size: 18px;
+    }
+    .title__slogan2 span {
+        font-size: 18px;
+    }
+    .title__slogan span {
+        font-size: 18px;
+    }
+    .button__nav {
+        padding-bottom: 90px;
+    }
+    .title__courses span {
+        font-size: 18px;
+    }
+    .title__teacher span {
+        font-size: 18px;
+    }
+    .holder__score {
+        padding: 30px 20px 30px 42px;
+    }
+    .score__section {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    .course__info {
+        padding-bottom: 90px;
+    }
+    .course__list__title span {
+        font-size: 18px;
+    }
+    .cource__list__text span {
+        font-size: 16px;
+    }
+    .reviews__title span {
+        font-size: 18px;
+    }
+    .title__test span {
+        font-size: 18px;
+    }
+    .test__text span {
+        font-size: 14px;
+        text-align: center;
+    }
+    .test__title {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .button__test {
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .course__btn {
+        font-size: 10px;
+        padding: 15px 20px;
+    }
+    .test__text {
+        display: flex;
+    }
+}
+
+@media (max-width: 410px) {
+    .button__link {
+        font-size: 12px;
+        padding: 17px 10px;
+    }
+    #view__butt1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    #view__butt2 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .card {
+        width: 240px;
+    }
+    .card__images{
+        border-radius: 10px;
+        max-width: 240px;
+        display: flex;
+    }
+    .slider__image {
+        gap: 140px;
+    }
+
+    .card__teacher{
+        max-width: 200px;
+    }
+    .teacher__images{
+        max-width: 200px;
+    }
+    .slider__teacher{
+        gap: 130px;
+    }
+
+    .reviews__slider{
+        max-width: 200px;
+    }
+    .reviews__images{
+        max-width: 200px;
+    }
+    .reviews__cards{
+        gap: 90px;
+    }
+    .score__top span {
+        font-size: 14px;
+    }
+    .score__bottom span {
+        font-size: 12px;
+    }
+    .course__list__title {
+        padding-bottom: 20px;
+    }
+    .cource__list__text span {
+        font-size: 12px;
+    }
+    .cource__list__text {
+        padding-bottom: 35px;
+    } 
+}
+@media (max-width: 360px) {
+    .image__title {
+        max-width: 90%;
+    }
+    .course__list__holder {
+        padding: 25px 15px;
+    }
+    .holder__score {
+        padding: 20px 20px 20px 25px;
+    }
+    .score__top img{
+        max-width: 6%;
+    }
+    .score__bottom img{
+        max-width: 6%;
+    }
+}
